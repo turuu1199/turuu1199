@@ -20,13 +20,14 @@
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=343447951092544&ev=PageView&noscript=1"
-    /></noscript>
+    src="https://www.facebook.com/tr?id=343447951092544&ev=PageView&noscript=1"/>
+</noscript>
     <!-- End Meta Pixel Code -->
 </head>
 
 <body>
     <script>
+<<<<<<< HEAD
         fbq('track', 'AddToCart', {	
             content_ids: ['ABC123', 'XYZ789'],	
             content_name: 'GALAXY Z FOLD 4 GRAYGREEN',	
@@ -34,6 +35,16 @@
             contents: [{'id': 'ABC123', 'quantity': 2}, {'id': 'XYZ789', 'quantity': 2}],	
             currency: 'MNT',	
             value: '6599900.00'
+=======
+        fbq('track', 'AddToCart', { 
+            content_ids: ['SM-F936BZAB'],  // Барааны  SKU
+            content_name: 'GALAXY Z FOLD 4 GRAYGREEN',  // Барааны  Вебсайт дээрх нэр
+            content_type: 'product',    
+            contents: [{'id': 'SM-F936BZAB', 'quantity': 1}],   // Барааны  SKU, Сагсалсан тоо ширхэг
+            content_category: 'Гар утас, таблет', // Вебсайт дээрхи категори 
+            currency: 'MNT',    // Валют 
+            value: '6599900.00'   // Нийт үнэ
+>>>>>>> 51c3201c3b9ff0234db7171e79732b5434c8d2ac
         });
         </script>
 </body>
