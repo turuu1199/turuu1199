@@ -27,21 +27,14 @@
 
 <body>
     <script>
-<<<<<<< Updated upstream
-        fbq(
-        'track', 'AddToCart', { 
-        content_type: 'product',
-        content_ids: ['1234'],
-        value: 600000.00,
-        contents: [{"id":"1234","quantity":1,"item_price":600000.00}],
-        content_name: 'ABC Leather Sandal',
-        currency: "MNT",
-        content_category: 'Shoes',   
-  }
-);
-=======
-    fbq('track', 'AddToCart',{ content_type:'', content_ids:'', value:'0.00', contents:'', contents_name:'Samsung Unpacked', content_category:'',currency:'MNT',}); 
->>>>>>> Stashed changes
-    </script>
+        fbq('track', 'AddToCart', {	
+            content_ids: ['ABC123', 'XYZ789'],	
+            content_name: 'Mobile',	
+            content_type: 'product',	
+            contents: [{'id': 'ABC123', 'quantity': 2}, {'id': 'XYZ789', 'quantity': 2}],	
+            currency: 'MNT',	
+            value: '600,000MNT'
+        });
+        </script>
 </body>
 </html>

@@ -27,10 +27,16 @@
 </head>
 <body>
     <script>
-    fbq('track', 'AddToWishlist',{
+        fbq('track', 'AddToWishlist', 
+        {	
+            content_ids: '[ABC123, XYZ789]',	
+            content_name: 'Mobile',	
+            content_category: 'product',	
+            contents: [{'id': 'ABC123', 'quantity': 2}, {'id': 'XYZ789', 'quantity': 2}],	
+            currency: 'MNT',	
+            value: '600,000MNT'
+        });
+        </script>
         
-        content_name:'Phones', content_category:'Product', content_ids: ['ABC123', 'XYZ789'], contents:'', currency: 'MNT', value:'0.00',});  
-    </script>
-
 </body>
 </html>
