@@ -27,8 +27,15 @@
 </head>
 <body>
     <script>
-       fbq('track', 'Purchase', {value: 0.00, currency: 'USD'}); 
-    </script>
-    
+        fbq('track', 'Purchase', {	
+            content_ids: ['ABC123', 'XYZ789'],	
+            content_name: 'Book',	
+            content_type: 'Product',	
+            contents: [{'id': 'ABC123', 'quantity': 2}, {'id': 'XYZ789', 'quantity': 2}],	
+            currency: 'MNT',	
+            num_items: '1',	
+            value: '50,000'
+        });
+        </script>
 </body>
 </html>
