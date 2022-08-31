@@ -27,13 +27,16 @@
 </head>
 <body>
     <script>
-        fbq('track', 'InitiateCheckout', {	
-            content_category: 'Гар утас',	
-            content_ids: ['ABC123', 'XYZ789'],	
-            contents: [{'id': 'ABC123', 'quantity': 2}, {'id': 'XYZ789', 'quantity': 2}],	
-            currency: 'MNT',	
-            num_items: '1',	
-            value: '6599900₮'
+        fbq('track', 'InitiateCheckout',
+         {  
+            content_ids: ['SM-F936BZAB'],    // Барааны  SKU
+            content_category: 'Гар утас, таблет',   // Вебсайт дээрхи категори 
+            content_name: 'Galaxy Z Fold 4 Graygreen',  // Барааны  Вебсайт дээрх нэр
+            content_type: 'product',  
+            contents: [ {'id': 'SM-F936BZAB'}], // Барааны  SKU
+            currency: 'MNT',     // Валют
+            value: '6599900.00',    // Барааны үнэ
+            num_items: '1'  //Бараа сагсалсан тоо
         });
         </script>
 
